@@ -7,7 +7,7 @@ pipeline {
 pwd
 ls
 mvn --version'''
-        tool 'Maven'
+        tool 'maven'
       }
     }
 
