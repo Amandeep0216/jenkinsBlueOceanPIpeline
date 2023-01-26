@@ -5,7 +5,9 @@ pipeline {
       steps {
         sh '''date
 pwd
-ls'''
+ls
+mvn --version'''
+        tool 'Maven'
       }
     }
 
