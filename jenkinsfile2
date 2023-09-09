@@ -1,0 +1,33 @@
+pipeline {
+    agent any
+    stages{
+    
+    stage("test"){
+        steps{
+        echo "test"
+        }
+    }
+    stage("build"){
+        steps{
+        echo "build"
+        }
+    }
+    stage("test env"){
+        steps{
+        echo "test env"
+        }
+    }
+    stage("deploy on prod"){
+       input{
+           message "deploy on prod?"
+        ok "Yes deploy"
+        }
+    
+    
+        steps{
+        echo "prod env"
+        }
+    
+    }
+    }
+}
